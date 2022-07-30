@@ -1,6 +1,6 @@
 <?php
 
-namespace LadLib\Laravel\Database;
+namespace LadLib\Database;
 
 use Illuminate\Database\Eloquent\Model;
 
@@ -11,6 +11,7 @@ trait traitModelExtra
      * @return array [fields => data type]
      */
     public function getTableColumns() {
+
         if($this instanceof Model);
 
         $allField = $this->getConnection()->getSchemaBuilder()->getColumnListing($this->getTable());
