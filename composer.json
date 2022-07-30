@@ -10,6 +10,7 @@
             "email": "dungla2011@gmail.com"
         }
     ],
+    "minimum-stability": "dev",
     "autoload": {
         "psr-4": {"LadLib\\": "src/"}
     },
